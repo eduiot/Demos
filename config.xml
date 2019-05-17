@@ -6,17 +6,6 @@
         versionCode = "10" >
         <!-- versionCode is optional and Android only -->
         <preference name="phonegap-version" value="cli-8.0.0" />
-
-        <name>Accelerometer test</name>
-        <description>Simple Accelerometer test.</description>
-        <author href="http://we2app.com" email="atik@we2app.com">
-        Atik
-        </author>
-        <content src="index.html" />
-        <icon src="icon.png" />
-        <gap:platform name="android" />
-        <gap:platform name="ios" />
-
         
         <!-- device required so we can detect if we are using iOS -->
         <plugin name="cordova-plugin-battery-status" spec="~2.0.2" />
@@ -39,4 +28,19 @@
         <plugin name="cordova-plugin-vibration" spec="~3.1.0" />
         <plugin name="cordova-plugin-statusbar" spec="~2.4.2" />
         <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
+        
+        <allow-navigation href="*" />
+
+        <name>Accelerometer test</name>
+        <description>Simple Accelerometer test.</description>
+        <author href="http://we2app.com" email="atik@we2app.com">
+        Atik
+        </author>
+        <content src="index.html" />
+        <icon src="icon.png" />
+        <gap:platform name="android" />
+        
+
+        
+
     </widget>
